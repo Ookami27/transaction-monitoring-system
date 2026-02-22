@@ -124,16 +124,16 @@ try:
             st.write(f"Minutes Above Threshold: {consecutive}")
 
         with col3:
-    if severity == "HEALTHY":
-        st.success("Healthy")
-    elif severity == "INFO":
-        st.info("INFO (15m)")
-    elif severity == "WARNING":
-        st.warning("WARNING (30m)")
-    elif severity == "CRITICAL":
-        st.error("CRITICAL (45m)")
-    elif severity == "SEVERE":
-        st.error("SEVERE (60m)")
+            if severity == "HEALTHY":
+                st.success("Healthy")
+            elif severity == "INFO":
+                st.info("INFO (15m)")
+            elif severity == "WARNING":
+                st.warning("WARNING (30m)")
+            elif severity == "CRITICAL":
+                st.error("CRITICAL (45m)")
+            elif severity == "SEVERE":
+                st.error("SEVERE (60m)")
 
 except Exception as e:
     st.error("Could not connect to Monitoring API")
