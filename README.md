@@ -46,6 +46,7 @@ Plotly (Interactive visualization)
 Uvicorn (ASGI server)
 
 🚨 Monitoring Model
+
 1️⃣ Statistical Detection
 
 For each metric:
@@ -124,7 +125,17 @@ Minute-level aggregation
 
 This simulates production database usage instead of CSV files.
 
+
 ▶️ How to Run the Project
+
+#can be done on a virtual environment for test, highly suggested by the way
+for that enter on the root folder of the project and run on terminal:
+
+python -m venv venv
+
+Then run:
+venv\Scripts\activate 
+venv created and active
 
 1️⃣ Install dependencies
 pip install -r requirements.txt
@@ -143,6 +154,14 @@ streamlit run dashboard/app.py
 Dashboard runs at:
 http://localhost:8501
 
+Short explanation:
+1. Run on root folder: python -m venv venv
+2. Then run: venv\Scripts\activate  
+3. then run: pip install -r requirements.txt  
+4. Run API first on your terminal by running: uvicorn app.main:app --reload 
+`(on browser you can see it on http://127.0.0.1:8000/docs#/default/monitor_monitor_get)`
+5. Then run scipt of the dashboard on a second terminal fron the root directory of the project: streamlit run dashboard/app.py 
+`(and it will be available on http://localhost:8501 on your browser)`
 
 📁 Project Structure
 app/
@@ -294,5 +313,4 @@ Aspiring AML Intelligence Analyst
 Focused on operational risk & transaction monitoring systems
 
 📜 License
-
 MIT License
