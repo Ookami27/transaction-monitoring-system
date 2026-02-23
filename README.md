@@ -160,7 +160,7 @@ Short explanation:
 3. then run: pip install -r requirements.txt  
 4. Run API first on your terminal by running: uvicorn app.main:app --reload 
 `(on browser you can see it on http://127.0.0.1:8000/docs#/default/monitor_monitor_get)`
-5. Then run scipt of the dashboard on a second terminal fron the root directory of the project: streamlit run dashboard/app.py 
+5. Then run the script of the dashboard on a second terminal from the root directory of the project: streamlit run dashboard/app.py 
 `(and it will be available on http://localhost:8501 on your browser)`
 
 📁 Project Structure
