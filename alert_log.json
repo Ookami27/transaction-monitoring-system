@@ -1,0 +1,17 @@
+[
+    {
+        "timestamp": "2026-02-27T01:17:35.768414",
+        "metric": "FAILED_RATE",
+        "severity": "INFO",
+        "consecutive_minutes": 17,
+        "message": "FAILED_RATE anomaly persisted for 17 minutes"
+    },
+    {
+        "timestamp": "2026-03-09T20:31:33.693585",
+        "metric": "FAILED_RATE",
+        "event": "ALERT",
+        "severity": "INFO",
+        "consecutive_minutes": 17,
+        "message": "FAILED_RATE anomaly persisted for 17 minutes"
+    }
+]
